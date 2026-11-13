@@ -41,32 +41,3 @@ while True:
             clientes.append({"id": novo_id_cliente, "nome": nome, "endereco": endereco, "telefone": telefone})
             print("Cliente {nome} cadastrado com sucesso!")
             novo_id_cliente += 1
-
-    elif opcao == "2":
-        if not clientes:
-            print("Nenhum cliente cadastrado.")
-        else:
-            for cliente in clientes:
-                print(f"ID: {cliente['id']}, Nome: {cliente['nome']}, Endereço: {cliente['endereco']}, Telefone: {cliente['telefone']}")
-
-    elif opcao == "3":
-        id_consulta = int(input("Digite o ID do cliente que deseja consultar: "))
-        cliente_encontrado = next((cliente for cliente in clientes if cliente["id"] == id_consulta), None)
-        if cliente_encontrado:
-            print(f"ID: {cliente_encontrado['id']}, Nome: {cliente_encontrado['nome']}, Endereço: {cliente_encontrado['endereco']}, Telefone: {cliente_encontrado['telefone']}")
-        else:
-            print("Cliente não encontrado.")
-
-    elif opcao == "4":
-        id_atualizar = int(input("Digite o ID do cliente que deseja atualizar: "))
-        cliente_encontrado = next((cliente for cliente in clientes if cliente["id"] == id_atualizar), None)
-        if cliente_encontrado:
-            nome = input("Digite o novo nome do cliente: ")
-            endereco = input("Digite o novo endereço do cliente: ")
-            telefone = input("Digite o novo telefone do cliente: ")
-            cliente_encontrado["nome"] = nome
-            cliente_encontrado["endereco"] = endereco
-            cliente_encontrado["telefone"] = telefone
-            print("Cliente atualizado com sucesso!")
-        else:
-            print("Cliente não encontrado.")
