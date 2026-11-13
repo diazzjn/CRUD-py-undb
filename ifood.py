@@ -41,3 +41,11 @@ while True:
             clientes.append({"id": novo_id_cliente, "nome": nome, "endereco": endereco, "telefone": telefone})
             print("Cliente {nome} cadastrado com sucesso!")
             novo_id_cliente += 1
+
+        elif op == "2":
+            if len(clientes) == 0:
+                print("Nenhum cliente cadastrado.")
+            else:
+                for cliente in clientes:
+                    print(f"ID: {cliente['id']}, Nome: {cliente['nome']}, Endereço: {cliente['endereco']}, Telefone: {cliente['telefone']}")
+        
