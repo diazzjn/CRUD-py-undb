@@ -39,7 +39,7 @@ while True:
             endereco = input("digite o endereço do cliente: ")
             telefone = input("digite o telefone do cliente: ")
             clientes.append({"id": novo_id_clientes, "nome": nome, "endereco": endereco, "telefone": telefone})
-            print(f"Cliente {nome} cadastrado com sucesso!")
+            print("Cliente {nome} cadastrado com sucesso!")
             novo_id_clientes += 1
 
         elif op in ("2", "3", "4", "5"):
@@ -47,7 +47,7 @@ while True:
                 print("Nenhum cliente cadastrado.")
             else:
                 for cliente in clientes:
-                    print(f"ID: {cliente['id']}, Nome: {cliente['nome']}, Endereço: {cliente['endereco']}, Telefone: {cliente['telefone']}")
+                    print("ID: {cliente['id']}, Nome: {cliente['nome']}, Endereço: {cliente['endereco']}, Telefone: {cliente['telefone']}")
 
         elif op == "6":
             continue
@@ -59,7 +59,7 @@ while True:
         print("Até logo!")
         break
 
-    elif op == "3":
+    elif opcao == "3":
         id_texto = input("ID do cliente: ")
         achou = False
         for clientes in clientes:
@@ -71,18 +71,18 @@ while True:
         if achou == False:
                     print("Cliente não encontrado.")
  
-    elif op == "5":
+    elif opcao == "5":
         id_texto = input("id do cliente para excluir: ")
         achou = False
         for cliente in clientes:
             if str(cliente["id"]) == id_texto:
                 clientes.remove(cliente)
                 achou = True
-                print(f"Cliente {cliente['nome']} excluído com sucesso!")
+                print("Cliente {cliente['nome']} excluído com sucesso!")
                 break
             if achou == False:
                 print("Cliente não encontrado.")
-    elif op == "false":
+    elif opcao == "false":
         print("Opção inválida.")
 
 
@@ -102,49 +102,10 @@ while True:
                 endereco = input("endereço do restaurante: ")
                 restaurante = {"id": novo_id_restaurante, "nome": nome, "categoria": categoria, "endereco": endereco}
                 restaurantes.append(restaurante)
-                print(f"{nome} cadastrado com sucesso!")
+                print("{nome} cadastrado com sucesso!")
                 novo_id_restaurante += 1
 
-            elif op == "2":
-                if len(restaurantes) == 0:
-                    print("Nenhum restaurante cadastrado.")
-                else:
-                    for restaurante in restaurantes:
-                        print(f"ID: {restaurante['id']}, nome: {restaurante['nome']}, categoria: {restaurante['categoria']}, endereço: {restaurante['endereco']}")
-
-            elif op == "3":
-                id_texto = input("ID do restaurante: ")
-                achou = False
-                for restaurante in restaurantes:
-                    if str(restaurante["id"]) == id_texto:
-                        print(f"ID: {restaurante['id']}, nome: {restaurante['nome']}, categoria: {restaurante['categoria']}, endereço: {restaurante['endereco']}")
-                        achou = True
-                        break
-                if not achou:
-                    print("Restaurante não encontrado.")
-
-    elif op == "4":
-            id_texto = input("ID do restaurante para atualizar: ")
-            achou = False
-            for restaurante in restaurantes:
-                if str(restaurante["id"]) == id_texto:
-                    nome = input("novo nome do restaurante: ")
-                    categoria = input("nova categoria do restaurante: ")
-                    endereco = input("novo endereço do restaurante: ")
-                    restaurante["nome"] = nome
-                    restaurante["categoria"] = categoria
-                    restaurante["endereco"] = endereco
-                    print(f"Restaurante {nome} atualizado com sucesso!")
-                    achou = True
-                    break
-            if not achou:
-                print("Restaurante não encontrado.")
-    elif op == "5":
-        id_texto = input("ID do restaurante para excluir: ")
-        achou = False
-        for restaurante in restaurantes:
-            if str(restaurante["id"]) == id_texto:
-                restaurantes.remove(restaurante)
-                achou = True
-                print(f"Restaurante {restaurante['nome']} excluído com sucesso!")
-                break
+    elif op == "2":
+        if len(restaurantes) == 0:
+            print("Nenhum restaurante cadastrado.")
+    
