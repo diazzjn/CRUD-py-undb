@@ -108,4 +108,18 @@ while True:
     elif op == "2":
         if len(restaurantes) == 0:
             print("Nenhum restaurante cadastrado.")
-    
+        else:
+            for restaurante in restaurantes:
+                print("ID: {restaurante['id']}, Nome: {restaurante['nome']}, Categoria: {restaurante['categoria']}, Endereço: {restaurante['endereco']}")
+
+    elif op == "3":
+        id_texto = input("id do restaurante: ")
+        achou = False
+        for restaurantes in restaurantes:
+            if str(restaurantes["id"]) == id_texto:
+                print("nome:", restaurantes["nome"])
+                print("categoria:", restaurantes["categoria"])
+                print("endereço:", restaurantes["endereco"])
+                achou = True
+        if achou == False:
+            print("Restaurante não encontrado.")
