@@ -17,15 +17,16 @@ etapas = ["Aguardando confirmação do restaurante", "Pedido em preparo", "Pedid
 
 
 while True:
-    print("Bem-vindo ao iFood!")
+    print("\nBem-vindo ao iFood!")
     print("1.clientes")
     print("2.restaurantes")
     print("3.entregadores")
     print("4.pedidos")
-    print("5.voltar")
+    print("5.sair")
     opcao = input("escolha uma opção: ")
 
     if opcao == "1":
+        print("\n--- CLIENTES ---")
         print("1.cadastrar clientes")
         print("2.listar clientes")
         print("3.consultar por id")
@@ -39,7 +40,7 @@ while True:
         endereco = input("digite o endereço do cliente: ")
         telefone = input("digite o telefone do cliente: ")
         clientes.append({"id": novo_id_cliente, "nome": nome, "endereco": endereco, "telefone": telefone})
-        print("Cliente {nome} cadastrado com sucesso!")
+        print(f"Cliente {nome} cadastrado com sucesso!")
         novo_id_cliente += 1
 
     elif op == "2":
@@ -47,18 +48,20 @@ while True:
                 print("Nenhum cliente cadastrado.")
         else:
             for cliente in clientes:
-                print(f"ID: {cliente['id']}, Nome: {cliente['nome']}, Endereço: {cliente['endereco']}, Telefone: {cliente['telefone']}")
+                print(f"ID: {cliente['id']}")
+                print(f"Nome: {cliente['nome']}")
+                print(f"Endereço: {cliente['endereco']}")
+                print(f"Telefone: {cliente['telefone']}")
 
     elif op == "3":
          id_consulta = int(input("Digite o ID do cliente que deseja consultar: "))
          achou = False
-            
     for cliente in clientes:
-                if cliente["id"] == id_consulta:
-                    if str(cliente["id"]) == str(id_consulta):
-                        print(f"Nome:", cliente["nome"])
-                        print(f"Endereço:", cliente["endereco"])
-                        print(f"Telefone:", cliente["telefone"])
-                    achou = True
-    if not achou:
+        if clientes["id"] == id_consulta:
+            if str(cliente["id"]) == str(id_consulta):
+                print(f"Nome:", cliente["nome"])
+                print(f"Endereço:", cliente["endereco"])
+                print(f"Telefone:", cliente["telefone"])
+                achou = True
+        if achou == False:
             print("Cliente não encontrado.")
