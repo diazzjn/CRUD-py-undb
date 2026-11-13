@@ -34,18 +34,31 @@ while True:
         print("6.voltar")
         op = input("escolha uma opção: ")
 
-        if opcao == "1":
-            nome = input("digite o nome do cliente: ")
-            endereco = input("digite o endereço do cliente: ")
-            telefone = input("digite o telefone do cliente: ")
-            clientes.append({"id": novo_id_cliente, "nome": nome, "endereco": endereco, "telefone": telefone})
-            print("Cliente {nome} cadastrado com sucesso!")
-            novo_id_cliente += 1
+    if opcao == "1":
+        nome = input("digite o nome do cliente: ")
+        endereco = input("digite o endereço do cliente: ")
+        telefone = input("digite o telefone do cliente: ")
+        clientes.append({"id": novo_id_cliente, "nome": nome, "endereco": endereco, "telefone": telefone})
+        print("Cliente {nome} cadastrado com sucesso!")
+        novo_id_cliente += 1
 
-        elif op == "2":
-            if len(clientes) == 0:
+    elif op == "2":
+        if len(clientes) == 0:
                 print("Nenhum cliente cadastrado.")
-            else:
-                for cliente in clientes:
-                    print(f"ID: {cliente['id']}, Nome: {cliente['nome']}, Endereço: {cliente['endereco']}, Telefone: {cliente['telefone']}")
-        
+        else:
+            for cliente in clientes:
+                print(f"ID: {cliente['id']}, Nome: {cliente['nome']}, Endereço: {cliente['endereco']}, Telefone: {cliente['telefone']}")
+
+    elif op == "3":
+         id_consulta = int(input("Digite o ID do cliente que deseja consultar: "))
+         achou = False
+            
+    for cliente in clientes:
+                if cliente["id"] == id_consulta:
+                    if str(cliente["id"]) == str(id_consulta):
+                        print(f"Nome:", cliente["nome"])
+                        print(f"Endereço:", cliente["endereco"])
+                        print(f"Telefone:", cliente["telefone"])
+                    achou = True
+    if not achou:
+            print("Cliente não encontrado.")
