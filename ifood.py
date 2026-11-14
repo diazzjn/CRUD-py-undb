@@ -40,28 +40,33 @@ while True:
         endereco = input("digite o endereço do cliente: ")
         telefone = input("digite o telefone do cliente: ")
         clientes.append({"id": novo_id_cliente, "nome": nome, "endereco": endereco, "telefone": telefone})
-        print(f"Cliente {nome} cadastrado com sucesso!")
+        print(f"Clientes {nome} cadastrado com sucesso!")
         novo_id_cliente += 1
 
     elif op == "2":
         if len(clientes) == 0:
                 print("Nenhum cliente cadastrado.")
         else:
-            for cliente in clientes:
-                print(f"ID: {cliente['id']}")
-                print(f"Nome: {cliente['nome']}")
-                print(f"Endereço: {cliente['endereco']}")
-                print(f"Telefone: {cliente['telefone']}")
+            for clientes in clientes:
+                print(f"ID: {novo_id_cliente['id']}")
+                print(f"Nome: {clientes['nome']}")
+                print(f"Endereço: {clientes['endereco']}")
+                print(f"Telefone: {clientes['telefone']}")
 
     elif op == "3":
          id_consulta = int(input("Digite o ID do cliente que deseja consultar: "))
          achou = False
-    for cliente in clientes:
+    for clientes in clientes:
         if clientes["id"] == id_consulta:
-            if str(cliente["id"]) == str(id_consulta):
-                print(f"Nome:", cliente["nome"])
-                print(f"Endereço:", cliente["endereco"])
-                print(f"Telefone:", cliente["telefone"])
+            if str(clientes["id"]) == str(id_consulta):
+                print(f"Nome:", clientes["nome"])
+                print(f"Endereço:", clientes["endereco"])
+                print(f"Telefone:", clientes["telefone"])
                 achou = True
         if achou == False:
             print("Cliente não encontrado.")
+
+        elif op == "6":
+            break
+        else:
+            print("Opção inválida. Tente novamente betinha.")
