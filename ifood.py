@@ -40,3 +40,12 @@ novo_id_cliente = 2
 novo_id_restaurante = 4
 novo_id_entregador = 2
 novo_id_pedido = 1
+
+while True:
+    print("\n ---BEM-VINDO AO IFOOD---")
+    print("1 - Clientes")
+    print("2 - Restaurantes")
+    print("3 - Entregadores")
+    print("4 - Pedidos")
+    print("0 - Sair")
+    opcao = input("Escolha uma opção: ")
