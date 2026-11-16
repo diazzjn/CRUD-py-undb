@@ -37,7 +37,7 @@ novo_id_entregador = 2
 novo_id_pedido = 1
 
 while True:
-    print("\n ---BEM-VINDO AO IFOOD---")
+    print("\n ---BEM VINDO AO IFOOD---")
     print("1 - Clientes")
     print("2 - Restaurantes")
     print("3 - Entregadores")
@@ -128,3 +128,22 @@ while True:
         break
     else:
         print("Opção inválida!")
+
+while True:
+            print("\n--- RESTAURANTES ---")
+            print("1 - Cadastrar")
+            print("2 - Listar")
+            print("3 - Consultar por ID (mostra o cardápio)")
+            print("4 - Atualizar")
+            print("5 - Excluir")
+            print("6 - Gerenciar cardápio")
+            print("0 - Voltar")
+            opcao_submenu = input("Escolha uma opção: ")
+
+if opcao == "1":
+    nome = input("Nome do restaurante: ")
+    endereco = input("Endereço: ")
+    restaurantes.append({"id": novo_id_restaurante, "nome": nome,"endereco": endereco, "cardapio": []})
+    print("Restaurante", nome, "cadastrado com ID", novo_id_restaurante)
+    print("Use a opção 6 para adicionar pratos ao cardápio.")
+    novo_id_restaurante = novo_id_restaurante + 1
