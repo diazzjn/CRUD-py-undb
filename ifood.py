@@ -173,4 +173,24 @@ elif opcao_submenu == "3":
             print(" ", numero, "-", prato["nome"], "| R$", prato["preco"])
             numero = numero + 1
         if achou == False:
-            print("Restaurante não encontrado.")
+           print("Restaurante não encontrado.")
+
+elif opcao == "4":
+    id_busca = input("ID do restaurante a atualizar: ")
+    achou = False
+    for restaurante in restaurantes:
+        if str(restaurante["id"]) == id_busca:
+            achou = True
+            tem_pedido = False
+            for pedido in pedidos:
+                if pedido["restaurante_id"] == restaurante["id"]:
+                   tem_pedido = True
+                   if tem_pedido:
+                       print("Não dá para excluir: este restaurante tem pedidos.")
+
+                else:
+                    restaurantes.remove(restaurante)
+                    print("Restaurante excluído!")
+                break
+            if achou == False:
+                    print("Restaurante não encontrado.")
