@@ -25,14 +25,9 @@ cardapio_churrascaria = [
 ]
 
 clientes.append({"id": 1, "nome": "João", "endereco": "Rua A, 1234", "telefone": "9898756909"})
-
-restaurantes.append({"id": 1, "nome": "Pizzaria", "endereco": "Rua B, 5678",
-                     "cardapio": cardapio_pizzaria})
-restaurantes.append({"id": 2, "nome": "Hamburgueria", "endereco": "Av. C, 100",
-                     "cardapio": cardapio_hamburgueria})
-restaurantes.append({"id": 3, "nome": "Churrascaria", "endereco": "Rua D, 200",
-                     "cardapio": cardapio_churrascaria})
-
+restaurantes.append({"id": 1, "nome": "Pizzaria", "endereco": "Rua B, 5678","cardapio": cardapio_pizzaria})
+restaurantes.append({"id": 2, "nome": "Hamburgueria", "endereco": "Av. C, 100","cardapio": cardapio_hamburgueria})
+restaurantes.append({"id": 3, "nome": "Churrascaria", "endereco": "Rua D, 200","cardapio": cardapio_churrascaria})
 entregadores.append({"id": 1, "nome": "Maria", "veiculo": "Moto"})
 
 
@@ -59,9 +54,9 @@ while True:
             print("4 - Atualizar")
             print("5 - Excluir")
             print("0 - Voltar")
-            op = input("Escolha uma opção: ")
+            opcao = input("Escolha uma opção: ")
 
-            if op == "1":
+            if opcao == "1":
              nome = input("Nome: ")
             endereco = input("Endereço: ")
             telefone = input("Telefone: ")
@@ -70,4 +65,66 @@ while True:
             print("Cliente", nome, "cadastrado com ID", novo_id_cliente)
             novo_id_cliente = novo_id_cliente + 1
 
-            elif op == "2":
+    elif opcao == "2":
+        if len(clientes) == 0:
+                    print("Nenhum cliente cadastrado.")
+        else:
+            for cliente in clientes:
+                print(cliente["id"], "-", cliente["nome"], "|", cliente["endereco"], "|", cliente["telefone"])
+
+    elif opcao == "3":
+         id_busca = input("ID do cliente: ")
+         achou = False
+    for cliente in clientes:
+        if str(cliente["id"]) == id_busca:
+         print("Nome:", cliente["nome"])
+        print("Endereço:", cliente["endereco"])
+        print("Telefone:", cliente["telefone"])
+        achou = True
+    if achou == False:
+            print("Cliente não encontrado.")
+
+    elif opcao == "4":
+        id_busca = input("ID do cliente a atualizar: ")
+        achou = False
+        for cliente in clientes:
+            if str(cliente["id"]) == id_busca:
+                achou = True
+                print("(Aperte Enter para manter o valor atual)")
+                novo = input("Nome [" + cliente["nome"] + "]: ")
+                if novo != "":
+                   cliente["nome"] = novo
+                novo = input("Endereço [" + cliente["endereco"] + "]: ")
+                if novo != "":
+                    cliente["endereco"] = novo
+                    novo = input("Telefone [" + cliente["telefone"] + "]: ")
+                if novo != "":
+                    cliente["telefone"] = novo
+                    print("Cliente atualizado!")
+        if achou == False:
+            print("Cliente não encontrado.")
+
+
+    elif opcao == "5":
+        id_busca = input("ID do cliente a excluir: ")
+        achou = False
+        for cliente in clientes:
+            if str(cliente["id"]) == id_busca:
+                achou = True
+                tem_pedido = False
+            for pedido in pedidos:
+                if pedido["cliente_id"] == cliente["id"]:
+                    tem_pedido = True
+                if tem_pedido:
+                    print("Não dá para excluir: este cliente tem pedidos.")
+                else:
+                    clientes.remove(cliente)
+                    print("Cliente excluído!")
+                    break
+            if achou == False:
+                    print("Cliente não encontrado.")
+
+    elif opcao == "0":
+        break
+    else:
+        print("Opção inválida!")
