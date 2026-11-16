@@ -49,3 +49,25 @@ while True:
     print("4 - Pedidos")
     print("0 - Sair")
     opcao = input("Escolha uma opção: ")
+
+    if opcao == "1":
+        while True:
+            print("\n--- CLIENTES ---")
+            print("1 - Cadastrar")
+            print("2 - Listar")
+            print("3 - Consultar por ID")
+            print("4 - Atualizar")
+            print("5 - Excluir")
+            print("0 - Voltar")
+            op = input("Escolha uma opção: ")
+
+            if op == "1":
+             nome = input("Nome: ")
+            endereco = input("Endereço: ")
+            telefone = input("Telefone: ")
+            clientes.append({"id": novo_id_cliente, "nome": nome,
+                                 "endereco": endereco, "telefone": telefone})
+            print("Cliente", nome, "cadastrado com ID", novo_id_cliente)
+            novo_id_cliente = novo_id_cliente + 1
+
+            elif op == "2":
