@@ -23,3 +23,20 @@ cardapio_churrascaria = [
     {"nome": "Arroz, farofa e vinagrete", "preco": 20.0},
     {"nome": "Suco natural", "preco": 10.0},
 ]
+
+clientes.append({"id": 1, "nome": "João", "endereco": "Rua A, 1234", "telefone": "9898756909"})
+
+restaurantes.append({"id": 1, "nome": "Pizzaria", "endereco": "Rua B, 5678",
+                     "cardapio": cardapio_pizzaria})
+restaurantes.append({"id": 2, "nome": "Hamburgueria", "endereco": "Av. C, 100",
+                     "cardapio": cardapio_hamburgueria})
+restaurantes.append({"id": 3, "nome": "Churrascaria", "endereco": "Rua D, 200",
+                     "cardapio": cardapio_churrascaria})
+
+entregadores.append({"id": 1, "nome": "Maria", "veiculo": "Moto"})
+
+
+novo_id_cliente = 2
+novo_id_restaurante = 4
+novo_id_entregador = 2
+novo_id_pedido = 1
