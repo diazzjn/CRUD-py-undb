@@ -189,4 +189,77 @@ elif opcao == "4":
             restaurante["endereco"] = novo
         print("Restaurante atualizado!")
     if achou == False:
-        print("Restaurante não encontrado.")    
+        print("Restaurante não encontrado.")
+
+elif opcao_submenu == "5":
+    id_busca = input("ID do restaurante a excluir: ")
+    achou = False
+    for restaurante in restaurantes:
+        if str(restaurante["id"]) == id_busca:
+            achou = True
+            tem_pedido = False
+            for pedido in pedidos:
+                if pedido["restaurante_id"] == restaurante["id"]:
+                    tem_pedido = True
+            if tem_pedido:
+                print("Não dá para excluir: este restaurante tem pedidos.")
+            else:
+                restaurantes.remove(restaurante)
+                print("Restaurante excluído!")
+            break
+    if achou == False:
+        print("Restaurante não encontrado.")
+
+elif opcao == "6":
+    id_busca = input("ID do restaurante: ")
+    achou = False
+    for restaurante in restaurantes:
+        if str(restaurante["id"]) == id_busca:
+           achou = True
+
+           while True:
+                print("\n--- CARDÁPIO:", restaurante["nome"], "---")
+                print("1 - Adicionar prato")
+                print("2 - Listar pratos")
+                print("3 - Atualizar prato")
+                print("4 - Remover prato")
+                print("0 - Voltar")
+                opcao_cardapio = input("Escolha uma opção: ")
+
+                if opcao_cardapio == "1":
+                    nome_prato = input("Nome do prato: ")
+                    preco_texto = input("Preço (R$): ")
+                    preco_texto = preco_texto.replace(",", ".")
+                    if preco_texto.replace(".", "", 1).isdigit():
+                        prato_novo = {"nome": nome_prato, "preco": float(preco_texto)}
+                        cardapio.append(prato_novo)
+                        print("Prato adicionado!")
+                    else:
+                        print("Preço inválido. Digite só números.")
+
+                elif opcao_cardapio == "2":
+                    if len(cardapio) == 0:
+                        print("Cardápio vazio.")
+                    else:
+                        numero = 1
+                        for prato in cardapio:
+                            print(numero, "-", prato["nome"], "| R$", prato["preco"])
+                            numero = numero + 1
+                
+                elif opcao_cardapio == "3":
+                    numero_texto = input("Número do prato a atualizar: ")
+                    numero_valido = False
+                    quantidade = len(cardapio)
+                    if numero_texto.isdigit():
+                        if int(numero_texto) >= 1 and int(numero_texto) <= quantidade:
+                            numero_valido = True
+                        if numero_valido:
+                            prato = cardapio[int(numero_texto) - 1]
+                            print("(Aperte Enter para manter o valor atual)")
+                            novo = input("Nome [" + prato["nome"] + "]: ")
+                            
+                
+
+
+
+
