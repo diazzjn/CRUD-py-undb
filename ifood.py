@@ -147,3 +147,30 @@ if opcao == "1":
     print("Restaurante", nome, "cadastrado com ID", novo_id_restaurante)
     print("Use a opção 6 para adicionar pratos ao cardápio.")
     novo_id_restaurante = novo_id_restaurante + 1
+
+elif opcao_submenu == "2":
+    if len(restaurantes) == 0:
+        print("Nenhum restaurante cadastrado.")
+    else:
+        for restaurante in restaurantes:
+            print(restaurante["id"], "-", restaurante["nome"], "|",restaurante["endereco"], "|",
+                len(restaurante["cardapio"]), "pratos")
+
+elif opcao_submenu == "3":
+    id_busca = input("ID do restaurante: ")
+    achou = False
+    for restaurante in restaurantes:
+        if str(restaurante["id"]) == id_busca:
+            achou = True
+            print("Nome:", restaurante["nome"])
+            print("Endereço:", restaurante["endereco"])
+            print("Cardápio:")
+        if len(restaurante["cardapio"]) == 0:
+            print("  (vazio)")
+        else:
+            numero = 1   # contador para numerar os pratos
+        for prato in restaurante["cardapio"]:
+            print(" ", numero, "-", prato["nome"], "| R$", prato["preco"])
+            numero = numero + 1
+        if achou == False:
+            print("Restaurante não encontrado.")
