@@ -180,16 +180,13 @@ elif opcao == "4":
     for restaurante in restaurantes:
         if str(restaurante["id"]) == id_busca:
             achou = True
-            tem_pedido = False
-            for pedido in pedidos:
-                if pedido["restaurante_id"] == restaurante["id"]:
-                   tem_pedido = True
-                   if tem_pedido:
-                       print("Não dá para excluir: este restaurante tem pedidos.")
-
-                else:
-                    restaurantes.remove(restaurante)
-                    print("Restaurante excluído!")
-                break
-            if achou == False:
-                    print("Restaurante não encontrado.")
+        print("(Aperte Enter para manter o valor atual)")
+        novo = input("Nome [" + restaurante["nome"] + "]: ")
+        if novo != "":
+            restaurante["nome"] = novo
+        novo = input("Endereço [" + restaurante["endereco"] + "]: ")
+        if novo != "":
+            restaurante["endereco"] = novo
+        print("Restaurante atualizado!")
+    if achou == False:
+        print("Restaurante não encontrado.")    
