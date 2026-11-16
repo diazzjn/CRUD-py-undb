@@ -56,18 +56,17 @@ while True:
             print("0 - Voltar")
             opcao = input("Escolha uma opção: ")
 
-            if opcao == "1":
-             nome = input("Nome: ")
+        if opcao == "1":
+            nome = input("Nome: ")
             endereco = input("Endereço: ")
             telefone = input("Telefone: ")
-            clientes.append({"id": novo_id_cliente, "nome": nome,
-                                 "endereco": endereco, "telefone": telefone})
-            print("Cliente", nome, "cadastrado com ID", novo_id_cliente)
-            novo_id_cliente = novo_id_cliente + 1
+            clientes.append({"id": novo_id_cliente, "nome": nome,"endereco": endereco, "telefone": telefone})
+        print("Cliente", nome, "cadastrado com ID", novo_id_cliente)
+        novo_id_cliente = novo_id_cliente + 1
 
     elif opcao == "2":
         if len(clientes) == 0:
-                    print("Nenhum cliente cadastrado.")
+            print("Nenhum cliente cadastrado.")
         else:
             for cliente in clientes:
                 print(cliente["id"], "-", cliente["nome"], "|", cliente["endereco"], "|", cliente["telefone"])
@@ -77,9 +76,9 @@ while True:
          achou = False
     for cliente in clientes:
         if str(cliente["id"]) == id_busca:
-         print("Nome:", cliente["nome"])
-        print("Endereço:", cliente["endereco"])
-        print("Telefone:", cliente["telefone"])
+            print("Nome:", cliente["nome"])
+            print("Endereço:", cliente["endereco"])
+            print("Telefone:", cliente["telefone"])
         achou = True
     if achou == False:
             print("Cliente não encontrado.")
@@ -92,15 +91,15 @@ while True:
                 achou = True
                 print("(Aperte Enter para manter o valor atual)")
                 novo = input("Nome [" + cliente["nome"] + "]: ")
-                if novo != "":
-                   cliente["nome"] = novo
-                novo = input("Endereço [" + cliente["endereco"] + "]: ")
-                if novo != "":
-                    cliente["endereco"] = novo
-                    novo = input("Telefone [" + cliente["telefone"] + "]: ")
-                if novo != "":
-                    cliente["telefone"] = novo
-                    print("Cliente atualizado!")
+            if novo != "":
+                cliente["nome"] = novo
+            novo = input("Endereço [" + cliente["endereco"] + "]: ")
+            if novo != "":
+                cliente["endereco"] = novo
+                novo = input("Telefone [" + cliente["telefone"] + "]: ")
+            if novo != "":
+                cliente["telefone"] = novo
+                print("Cliente atualizado!")
         if achou == False:
             print("Cliente não encontrado.")
 
@@ -115,12 +114,12 @@ while True:
             for pedido in pedidos:
                 if pedido["cliente_id"] == cliente["id"]:
                     tem_pedido = True
-                if tem_pedido:
+            if tem_pedido:
                     print("Não dá para excluir: este cliente tem pedidos.")
-                else:
-                    clientes.remove(cliente)
-                    print("Cliente excluído!")
-                    break
+            else:
+                clientes.remove(cliente)
+                print("Cliente excluído!")
+                break
             if achou == False:
                     print("Cliente não encontrado.")
 
@@ -130,15 +129,15 @@ while True:
         print("Opção inválida!")
 
 while True:
-            print("\n--- RESTAURANTES ---")
-            print("1 - Cadastrar")
-            print("2 - Listar")
-            print("3 - Consultar por ID (mostra o cardápio)")
-            print("4 - Atualizar")
-            print("5 - Excluir")
-            print("6 - Gerenciar cardápio")
-            print("0 - Voltar")
-            opcao_submenu = input("Escolha uma opção: ")
+        print("\n--- RESTAURANTES ---")
+        print("1 - Cadastrar")
+        print("2 - Listar")
+        print("3 - Consultar por ID (mostra o cardápio)")
+        print("4 - Atualizar")
+        print("5 - Excluir")
+        print("6 - Gerenciar cardápio")
+        print("0 - Voltar")
+        opcao_submenu = input("Escolha uma opção: ")
 
 if opcao == "1":
     nome = input("Nome do restaurante: ")
