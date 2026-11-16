@@ -257,8 +257,56 @@ elif opcao == "6":
                             prato = cardapio[int(numero_texto) - 1]
                             print("(Aperte Enter para manter o valor atual)")
                             novo = input("Nome [" + prato["nome"] + "]: ")
-                            
-                
+                            if novo != "":
+                                prato["nome"] = novo
+                            novo = input("Preço [" + str(prato["preco"]) + "]: ")
+                            novo = novo.replace(",", ".")
+                            if novo != "":
+                                if novo.replace(".", "", 1).isdigit():
+                                    prato["preco"] = float(novo)
+                                else:
+                                    print("Preço inválido, o preço antigo foi mantido.")
+                                print("Prato atualizado!")
+                    else:
+                        print("Número inválido.")
+
+                elif opcao_cardapio == "4":
+                    numero_texto = input("Número do prato a remover: ")
+                    numero_valido = False
+                    quantidade = len(cardapio)
+                    if numero_texto.isdigit():
+                        if int(numero_texto) >= 1 and int(numero_texto) <= quantidade:
+                            numero_valido = True
+                    if numero_valido:
+                        cardapio.pop(int(numero_texto) - 1)
+                        print("Prato removido!")
+                    else:
+                        print("Número inválido.")
+                elif opcao_cardapio == "0":
+                    break
+    if achou == False:
+       print("Restaurante não encontrado.")
+
+elif opcao == "3":
+    while True:
+        print("\n--- ENTREGADORES ---")
+        print("1 - Cadastrar")
+        print("2 - Listar")
+        print("3 - Consultar por ID")
+        print("4 - Atualizar")
+        print("5 - Excluir")
+        print("0 - Voltar")
+        opcao_submenu = input("Escolha uma opção: ")
+
+        if opcao_submenu == "1":
+            nome = input("Nome do entregador: ")
+            veiculo = input("Veículo (moto, bike, carro): ")
+            entregadores.append({"id": novo_id_entregador, "nome": nome, "veiculo": veiculo})
+            print("Entregador", nome, "cadastrado com ID", novo_id_entregador)
+            novo_id_entregador = novo_id_entregador + 1
+        
+
+
 
 
 
