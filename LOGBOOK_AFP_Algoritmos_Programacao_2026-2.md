@@ -213,9 +213,9 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
+1. Conhecimento sobre variáveis, como podemos utilizar elas para armazenar dados.
+2. Aprendizado sobre entrada e saída de dados, input() e print(), para mostrar informações e exibir às mesma na tela.
+3. 
 4. _…_ *(opcional)*
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
