@@ -213,19 +213,19 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
+1. Conhecimento sobre variáveis, como podemos utilizar elas para armazenar dados.
+2. Aprendizado sobre entrada e saída de dados, input() e print(), para mostrar informações e exibir às mesma na tela.
+3. Com o Armazenamento de informações consigo utilizar variáveis para guardar informações e trabalhar com os dados recebidos durante a execução do programa.
 4. _…_ *(opcional)*
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+1. Controle de estruturas de repetição: Preciso entender melhor como utilizar while em conjunto com condições, break e continue, para controlar a execução de menus e evitar repetições desnecessárias no programa.
+2. Validação de entrada de dados: Preciso aprender a desenvolver validações mais eficientes para impedir que o programa aceite informações vazias, valores inválidos ou dados incompatíveis com o que está sendo solicitado.
+3. Diferença entre tipos primitivos: Preciso aprofundar a compreensão sobre as diferenças entre int, float, str e bool, principalmente em situações nas quais é necessário escolher o tipo correto para armazenar e manipular informações.
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> _…_
+> Acredito que compreendo que o comando while é utilizado para criar estruturas de repetição, permitindo que um bloco de código seja executado várias vezes enquanto uma determinada condição for verdadeira. Também entendo que a entrada e saída de dados são fundamentais para a interação entre o usuário e o programa, sendo o input() responsável por receber informações e o print() por apresentar informações na tela. Além disso, compreendo que os tipos primitivos de dados, como int, float, str e bool, são utilizados para armazenar diferentes tipos de informações, cada um com sua finalidade. Acredito que esses conhecimentos são essenciais para desenvolver programas que recebam informações, processem dados e apresentem resultados de maneira organizada.
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
@@ -234,21 +234,21 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
 
-- **Referência 1:** _…_ — **Contribuição:** _…_
-- **Referência 2:** _…_ — **Contribuição:** _…_
+- **Referência 1:** Aulas de Python — **Contribuição:** Saídas de dados e tipos primitivos nos cursos da Alura e com Gustavo Guanabara, a aula ajudou no aprofundamento de saídas de dados, no uso de while, if, appended, lista, e appended os conteúdos disponíveis ajudaram na melhor utilização dos mesmos em projetos. 
+- **Referência 2:** Exercício de Python — **Contribuição:** A grande quantidade de Exercícios praticados trouxe um melhor entendimento, e conhecimento sobre alguns conceitos nos quais eram confusos de inicio.
 
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
 
-> _…_
+> Em relação ao Campo 01, percebo que meu entendimento sobre os conteúdos evoluiu. Antes, tinha uma compreensão mais básica sobre o funcionamento do while, a entrada e saída de dados e os tipos primitivos. Agora, consigo entender melhor como esses conceitos funcionam na prática e como podem ser utilizados em conjunto na construção de programas em Python. ambém passei a compreender melhor a importância das condições para controlar a repetição de comandos, a utilização do input() para receber informações e do print() para apresentar resultados. Além disso, consigo identificar quando utilizar tipos como int, float, str e bool, de acordo com a informação que desejo armazena.
 
 **2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+| Aulas de Python  | 3 aulas | 	Reforçar os conhecimentos sobre lógica de programação, estruturas de repetição e utilização de variáveis. |
+| Visual Studio Code | 	1 instalação | Ambiente utilizado para escrever, organizar e executar os códigos do projeto. |
+| Prática de programação | 15 exercício | Aplicar os conhecimentos adquiridos e desenvolver maior familiaridade com a linguagem Python. |
+| Material de estudo e exercícios | 3 materiais(livros,documentos e mais) | Auxiliar na compreensão dos conteúdos de entrada e saída de dados, tipos primitivos e estruturas de repetição. |
 
 #### Registro do Ciclo 02 — 19/08
 1. **Desafio do ciclo (em 1 frase):** _…_
