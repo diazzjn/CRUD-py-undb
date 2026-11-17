@@ -245,10 +245,10 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| Aulas de Python  | 3 aulas |  |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+| Aulas de Python  | 3 aulas | 	Reforçar os conhecimentos sobre lógica de programação, estruturas de repetição e utilização de variáveis. |
+| Visual Studio Code | 	1 instalação | Ambiente utilizado para escrever, organizar e executar os códigos do projeto. |
+| Prática de programação | 15 exercício | Aplicar os conhecimentos adquiridos e desenvolver maior familiaridade com a linguagem Python. |
+| Material de estudo e exercícios | 3 materiais(livros,documentos e mais) | Auxiliar na compreensão dos conteúdos de entrada e saída de dados, tipos primitivos e estruturas de repetição. |
 
 #### Registro do Ciclo 02 — 19/08
 1. **Desafio do ciclo (em 1 frase):** _…_
