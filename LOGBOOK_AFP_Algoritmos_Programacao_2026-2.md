@@ -219,9 +219,9 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 4. _…_ *(opcional)*
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+1. Controle de estruturas de repetição: Preciso entender melhor como utilizar while em conjunto com condições, break e continue, para controlar a execução de menus e evitar repetições desnecessárias no programa.
+2. Validação de entrada de dados: Preciso aprender a desenvolver validações mais eficientes para impedir que o programa aceite informações vazias, valores inválidos ou dados incompatíveis com o que está sendo solicitado.
+3. Diferença entre tipos primitivos: Preciso aprofundar a compreensão sobre as diferenças entre int, float, str e bool, principalmente em situações nas quais é necessário escolher o tipo correto para armazenar e manipular informações.
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
