@@ -293,13 +293,19 @@ Repositório: https://github.com/diazzjn/CRUD-py-undb
 </details>
 
 #### Registro do Ciclo 04 — 02/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Aplicar estruturas condicionais (if, elif e else) no sistema de delivery, criando regras para validar entradas e controlar as ações disponíveis no CRUD.
+2. **O que implementei (commits / arquivos / links):** Continuei o desenvolvimento do arquivo ifood.py, utilizando estruturas condicionais nas funcionalidades de cadastro, consulta, atualização e remoção de clientes, restaurantes, entregadores e pedidos. Também apliquei condições para validar as opções escolhidas pelo usuário e controlar o andamento dos pedidos.
+3. **Objeto(s) de conhecimento mobilizado(s):**
+- if: utilizado para verificar se uma condição é verdadeira antes de executar uma ação. No projeto, permite verificar se um registro foi encontrado ou se uma opção escolhida é válida.
+- elif: utilizado para verificar outras possibilidades quando a condição anterior não é atendida, como nas opções dos menus.
+- else: utilizado para executar uma alternativa quando nenhuma das condições anteriores é verdadeira, permitindo apresentar mensagens de erro ou opções inválidas.
+- Regras de negócio: as condicionais ajudam a garantir que o usuário escolha opções existentes, que os registros sejam encontrados antes de serem alterados e que as etapas dos pedidos sigam as opções disponíveis.
+5. **Desvio ou erro encontrado + causa técnica:**
+  Uma dificuldade foi organizar as condições para tratar diferentes escolhas do usuário sem permitir que opções inválidas fossem processadas. Isso exige verificar corretamente os valores recebidos pelo input() e utilizar as estruturas condicionais na ordem adequada.
+Não tenho confirmação de um registro específico do lote de dados defeituosos que tenha provocado uma falha. Por isso, não atribuo o problema a um valor None, texto vazio ou número negativo sem ter identificado esse caso no código.
+6. **Decisão de ajuste + fonte:** A decisão foi utilizar as estruturas if, elif e else para separar as possibilidades de escolha e apresentar mensagens adequadas quando o usuário informa uma opção inválida. Também foi importante revisar as condições antes de executar operações de cadastro, atualização e exclusão.
+7. **Feedback recebido e o que mudei:** Durante o desenvolvimento, percebi a importância de organizar melhor as condições para deixar o sistema mais compreensível e evitar a execução de ações com opções inválidas. A partir disso, passei a observar com mais atenção a ordem das verificações e as alternativas apresentadas ao usuário.
+8. **Próximo passo:** Aprofundar o uso de estruturas condicionais combinadas com laços de repetição, melhorando a validação dos dados e a navegação pelos menus do sistema.
 
 ---
 
