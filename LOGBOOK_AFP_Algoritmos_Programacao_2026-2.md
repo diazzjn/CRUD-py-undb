@@ -252,7 +252,8 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 #### Registro do Ciclo 02 — 19/08
 1. **Desafio do ciclo (em 1 frase):** Compreender e aplicar os conceitos básicos de Python, principalmente estruturas de repetição, entrada e saída de dados e tipos primitivos, no desenvolvimento de um sistema de delivery.
-2. **O que implementei (commits / arquivos / links):** ifood.py
+2. **O que implementei (commits / arquivos / links):** Desenvolvi o arquivo ifood.py, utilizando variáveis para armazenar informações dos clientes, restaurantes, entregadores e pedidos. Também utilizei input() para receber informações e print() para apresentar mensagens e resultados no terminal.
+Repositório: https://github.com/diazzjn/CRUD-py-undb
 3. **Objeto(s) de conhecimento mobilizado(s):** Estrutura de repetição while, Entrada e saída de dados com input() e print(), Listas e dicionários.
 4. **Desvio ou erro encontrado + causa técnica:** Uma das dificuldades foi compreender como controlar a repetição dos menus e como verificar se determinada informação foi encontrada. Isso exigiu uma melhor compreensão das condições e das variáveis de controle, como achou.
 5. **Decisão de ajuste + fonte:** Decidi revisar a utilização do while, das condicionais e das variáveis, além de realizar testes no próprio código para compreender melhor o funcionamento de cada estrutura. Utilizei como referência as aulas de Python e os exercícios práticos desenvolvidos durante os estudos.
