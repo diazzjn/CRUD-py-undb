@@ -251,13 +251,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 | Material de estudo e exercícios | 3 materiais(livros,documentos e mais) | Auxiliar na compreensão dos conteúdos de entrada e saída de dados, tipos primitivos e estruturas de repetição. |
 
 #### Registro do Ciclo 02 — 19/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender e aplicar os conceitos básicos de Python, principalmente estruturas de repetição, entrada e saída de dados e tipos primitivos, no desenvolvimento de um sistema de delivery.
+2. **O que implementei (commits / arquivos / links):** ifood.py
+3. **Objeto(s) de conhecimento mobilizado(s):** Estrutura de repetição while, Entrada e saída de dados com input() e print(), Listas e dicionários.
+4. **Desvio ou erro encontrado + causa técnica:** Uma das dificuldades foi compreender como controlar a repetição dos menus e como verificar se determinada informação foi encontrada. Isso exigiu uma melhor compreensão das condições e das variáveis de controle, como achou.
+5. **Decisão de ajuste + fonte:** Decidi revisar a utilização do while, das condicionais e das variáveis, além de realizar testes no próprio código para compreender melhor o funcionamento de cada estrutura. Utilizei como referência as aulas de Python e os exercícios práticos desenvolvidos durante os estudos.
+6. **Feedback recebido e o que mudei:** A partir da análise do código e da revisão dos conteúdos, percebi a necessidade de melhorar a organização e a clareza da programação. Passei a observar melhor a utilização das variáveis, das listas, dos dicionários e das estruturas de repetição.
+7. **Próximo passo:** Continuar praticando Python, aprofundar meus conhecimentos em validação de dados e tratamento de erros, além de melhorar a organização do sistema de delivery.
 
 ## 🟢 CICLO 03 — 26/08 — Operadores, fluxogramas e paradigmas
 
