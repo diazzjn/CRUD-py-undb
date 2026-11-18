@@ -271,13 +271,14 @@ Repositório: https://github.com/diazzjn/CRUD-py-undb
 </details>
 
 #### Registro do Ciclo 03 — 26/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender como utilizar variáveis, tipos primitivos e entrada e saída de dados para armazenar informações e permitir a interação entre o usuário e o sistema de delivery.
+2. **O que implementei (commits / arquivos / links):** Desenvolvi o arquivo ifood.py, utilizando variáveis para armazenar informações dos clientes, restaurantes, entregadores e pedidos. Também utilizei input() para receber informações e print() para apresentar mensagens e resultados no terminal.
+Repositório: https://github.com/diazzjn/CRUD-py-undb
+3. **Objeto(s) de conhecimento mobilizado(s):** Armazenamento de dados: utilização de listas e dicionários para organizar os registros,Saída de dados: utilização do print() para apresentar informações na tela.
+4. **Desvio ou erro encontrado + causa técnica:** Uma das dificuldades foi compreender como os dados recebidos pelo input() são armazenados e utilizados no programa. Percebi que as informações recebidas inicialmente são do tipo str, sendo necessário compreender a conversão para outros tipos, como int e float, quando a operação exige valores numéricos.
+5. **Decisão de ajuste + fonte:** Decidi praticar exercícios de Python e revisar os conteúdos das aulas para compreender melhor a utilização das variáveis, dos tipos primitivos e das funções de entrada e saída. Utilizei como referências as aulas de Python da Alura, os conteúdos do Gustavo Guanabara e os exercícios realizados durante os estudos.
+6. **Feedback recebido e o que mudei:** A partir da análise do meu código e dos exercícios realizados, percebi que precisava melhorar minha compreensão sobre o armazenamento e a utilização dos dados. Passei a prestar mais atenção aos tipos de informações que cada variável recebe e à maneira como elas são utilizadas nas operações do sistema.
+7. **Próximo passo:** Aprofundar meus conhecimentos sobre operadores, expressões e estruturas condicionais, buscando compreender melhor como utilizar os dados armazenados para realizar operações e tomar decisões dentro do programa.
 
 ## 🟢 CICLO 04 — 02/09 — Estruturas condicionais: `if`, `elif`, `else`
 
