@@ -353,8 +353,8 @@ Não tenho confirmação de um registro específico do lote de dados defeituosos
 
 | | |
 |---|---|
-| **Nome do estudante** | _…_ |
-| **Data de realização** | _…_ |
+| **Nome do estudante** | Daniel Rodrigues Dias |
+| **Data de realização** | 20-11-2026 |
 | **Unidade curricular** | Algoritmos e Programação |
 | **Professor(a)** | Rondineli Seba Salomão |
 
