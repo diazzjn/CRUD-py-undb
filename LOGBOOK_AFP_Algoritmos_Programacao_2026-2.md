@@ -398,19 +398,19 @@ Não tenho confirmação de um registro específico do lote de dados defeituosos
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59*
 
 **3a. O que descobri que mudou minha compreensão do problema (mínimo 2 achados, com objeto de conhecimento associado):**
-1. _…_ — *Objeto de conhecimento:* _…_
-2. _…_ — *Objeto de conhecimento:* _…_
+1. Descobri que as estruturas condicionais não servem apenas para escolher caminhos no código, mas também para aplicar regras de negócio e impedir que ações sejam executadas quando os dados ou opções não são válidos. — *Objeto de conhecimento:* Estruturas condicionais (if, elif e else) e validação de dados.
+2. Percebi que organizar as condições em diferentes possibilidades facilita o funcionamento dos menus e deixa o código mais claro, pois cada escolha do usuário pode receber um tratamento específico.  — *Objeto de conhecimento:* Controle de fluxo, lógica condicional e organização de algoritmos.
 3. _…_ *(opcional)*
 
 **3b. Desvio em relação ao Campo 02 (ao menos 1 — causa técnica):**
-- **Desvio:** _…_
-- **Causa técnica:** _…_
+- **Desvio:** Durante a implementação, percebi que precisava dedicar mais atenção à validação das opções escolhidas pelo usuário e à organização das condições do que havia previsto inicialmente.
+- **Causa técnica:** A utilização de if, elif e else exige analisar diferentes possibilidades de entrada e organizar corretamente a ordem das condições, evitando que opções inválidas sejam aceitas ou que ações sejam executadas sem a verificação necessária.
 
 **3c. Decisão de ajuste (ao menos 1) com justificativa e fonte:**
-- **Decisão:** _…_
-- **Fonte:** _…_
+- **Decisão:** Organizar as estruturas condicionais utilizando if, elif e else para tratar diferentes opções do usuário, validar escolhas nos menus e apresentar mensagens quando uma opção não for válida. Essa decisão foi tomada para tornar o sistema mais organizado e evitar a execução de ações inadequadas.
+- **Fonte:** Cursos( Alura, Gustavo Guanabara) e aulas na faculdade
 
-**Objeto de conhecimento mobilizado nesta decisão:** _…_
+**Objeto de conhecimento mobilizado nesta decisão:** Estruturas condicionais (if, elif e else), controle de fluxo e validação de dados de entrada.
 
 ### 🧩 CAMPO 04 — Interação com IA
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59 | OBRIGATÓRIO*
