@@ -448,13 +448,14 @@ Não tenho confirmação de um registro específico do lote de dados defeituosos
 </details>
 
 #### Registro do Ciclo 05 — 09/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Combinar estruturas condicionais e operadores lógicos para validar dados e controlar diferentes situações dentro do sistema de delivery.
+2. **O que implementei (commits / arquivos / links):** Continuei o desenvolvimento do sistema no arquivo ifood.py, utilizando condições para validar as opções dos menus, verificar registros existentes e controlar as operações de cadastro, atualização, remoção e pedidos. comints (
+implementção de funões novas).
+3. **Objeto(s) de conhecimento mobilizado(s):** Combinação de condições para validar entradas,controle de fluxo e regras de negócio,Validação de dados e tratamento de opções inválidas.
+4. **Desvio ou erro encontrado + causa técnica:** Uma dificuldade foi compreender como combinar mais de uma condição em uma única verificação, pois uma entrada pode precisar atender a vários requisitos para ser considerada válida. A causa técnica está na avaliação dos operadores lógicos e na necessidade de que as condições sejam organizadas corretamente para evitar que entradas inválidas sejam aceitas.
+5. **Decisão de ajuste + fonte:** Decidi combinar verificações utilizando operadores lógicos e estruturas condicionais para validar as escolhas do usuário e tornar as regras do sistema mais claras. Também procurei organizar as condições para facilitar a compreensão e manutenção do código. fonte = Python livro da alura
+6. **Feedback recebido e o que mudei:** Ao revisar a lógica do sistema, percebi que combinar condições corretamente ajuda a evitar verificações desnecessárias e torna o fluxo do programa mais organizado. Passei a prestar mais atenção na forma como as condições são agrupadas e na ordem em que são avaliadas.
+7. **Próximo passo:** Aprofundar o uso de estruturas de repetição, especialmente while e for, para melhorar a navegação pelos menus e automatizar operações repetitivas no sistema.
 
 ## 🟠 CICLO 06 — 30/09 — Devolutiva da P1 + repetição: `for`, `while`, `break`, `continue`
 
