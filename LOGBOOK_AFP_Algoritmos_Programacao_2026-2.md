@@ -469,13 +469,19 @@ implementção de funões novas).
 </details>
 
 #### Registro do Ciclo 06 — 30/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Utilizar laços de repetição para manter os menus funcionando, percorrer registros e controlar a execução das operações do sistema.
+2. **O que implementei (commits / arquivos / links):** Continuei o desenvolvimento do sistema ifood.py, utilizando while para manter os menus ativos até que o usuário escolha sair e for para percorrer listas de clientes, restaurantes, entregadores e pedidos durante consultas e listagens.
+Repositório: https://github.com/diazzjn/CRUD-py-undb
+3. **Objeto(s) de conhecimento mobilizado(s):** while: repetição baseada em uma condição, utilizada para manter menus em funcionamento.
+for: utilizado para percorrer listas e acessar seus registros.
+break: interrupção de um laço de repetição.
+continue: retorno à próxima repetição, ignorando o restante da execução atual.
+Condição de parada e controle de repetição.
+4. **Desvio ou erro encontrado + causa técnica:** Uma dificuldade foi compreender a diferença entre os laços for e while e identificar quando cada um é mais adequado. O for é utilizado quando preciso percorrer os elementos de uma lista, enquanto o while é mais adequado para manter menus funcionando enquanto uma condição for verdadeira.
+5. **Decisão de ajuste + fonte:** Decidi utilizar while nos menus que precisam continuar funcionando até uma opção de saída ser escolhida e for nas operações de listagem e busca dos registros. Essa escolha facilita o controle da execução e evita repetir manualmente instruções.
+fonte = https://docs.python.org/3/tutorial/controlflow.html
+7. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** não recebi a prova!
+8. **Próximo passo:** Aprofundar o uso de listas para armazenar, organizar e manipular os registros do sistema, compreendendo melhor as operações de inserção, remoção e consulta.
 
 ## 🟠 CICLO 07 — 07/10 — Listas: armazenamento e iteração
 
@@ -489,13 +495,13 @@ implementção de funões novas).
 </details>
 
 #### Registro do Ciclo 07 — 07/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Organizar os dados do sistema utilizando listas e compreender como armazenar, acessar, percorrer e modificar seus elementos.
+2. **O que implementei (commits / arquivos / links):** Continuei desenvolvendo o sistema ifood.py, utilizando listas para armazenar os clientes, restaurantes, entregadores e pedidos. Também utilizei operações de inserção e remoção para realizar os cadastros e exclusões, além de percorrer os dados para apresentar informações ao usuário. 
+3. **Objeto(s) de conhecimento mobilizado(s):** Armazenamento de múltiplos registros, Organização e manipulação de coleções de dados, Remoção de elementos utilizando remove() e/ou pop(), conforme a operação utilizada no código.
+4. **Desvio ou erro encontrado + causa técnica:** Uma dificuldade foi compreender como acessar corretamente os elementos das listas utilizando índices, considerando que a contagem começa em zero. Isso exige atenção ao acessar posições e ao relacionar a posição de um elemento com a quantidade de registros armazenados, evitando acessar índices inexistentes.
+5. **Decisão de ajuste + fonte:** Decidi utilizar listas para armazenar conjuntos de registros do mesmo tipo, como clientes, restaurantes, entregadores e pedidos, pois elas permitem adicionar, remover e percorrer os elementos de maneira organizada. Também passei a utilizar laços para consultar os registros sem precisar acessar cada elemento manualmente.
+6. **Feedback recebido e o que mudei:** Durante o desenvolvimento, compreendi melhor a importância de organizar os registros em listas para facilitar as operações CRUD. A utilização de listas tornou mais simples realizar consultas, cadastrar novos elementos e remover registros existentes.
+7. **Próximo passo:** Aprofundar o uso de dicionários para organizar os dados de cada registro, utilizando chaves para acessar informações específicas e facilitando as buscas no sistema.
 
 ## 🟠 CICLO 08 — 14/10 — Busca/consulta e introdução a dicionários e matrizes
 
@@ -510,13 +516,15 @@ implementção de funões novas).
 </details>
 
 #### Registro do Ciclo 08 — 14/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Organizar os registros utilizando dicionários e desenvolver buscas para localizar informações específicas dentro das listas do sistema.
+2. **O que implementei (commits / arquivos / links):** Continuei o desenvolvimento do sistema ifood.py, utilizando dicionários para armazenar informações de clientes, restaurantes, entregadores e pedidos, e listas para agrupar esses registros. Implementei consultas utilizando identificadores e percorri as listas para localizar os registros desejados.
+Repositório: https://github.com/diazzjn/CRUD-py-undb
+3. **Objeto(s) de conhecimento mobilizado(s):** Busca e consulta de registros,Comparação de identificadores,Variáveis booleanas, como achou = False, para controlar buscas.
+4. **Desvio ou erro encontrado + causa técnica:** Uma dificuldade foi compreender como localizar um registro específico dentro de uma lista de dicionários e acessar suas informações por meio das chaves. A causa técnica está na necessidade de percorrer a lista, comparar o identificador de cada registro com o valor procurado e acessar os dados utilizando as chaves corretas.
+5. **Decisão de ajuste + fonte:** Decidi organizar cada registro como um dicionário, utilizando chaves para representar informações como nome, endereço, telefone e ID. Dessa forma, cada dado pode ser acessado de maneira mais clara, enquanto as listas permitem armazenar vários registros e percorrê-los durante as consultas.
+Fonte: Conteúdo das aulas de Algoritmos e Programação e documentação oficial do Python sobre dicionários: https://docs.python.org/3/tutorial/datastructures.html#dictionaries.
+6. **Feedback recebido e o que mudei:** Durante o desenvolvimento, percebi que utilizar dicionários dentro de listas facilita a organização e a identificação das informações de cada registro. Com isso, passei a compreender melhor como relacionar os dados utilizando IDs e como realizar buscas por meio de laços e comparações.
+7. **Próximo passo:** Aprofundar as operações de atualização e remoção de registros, garantindo que as informações sejam modificadas corretamente e que as regras de negócio do sistema sejam respeitadas.
 
 ---
 
